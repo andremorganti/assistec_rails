@@ -12,8 +12,12 @@
       </ul>
 
       <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2"><%= t('Login') %></button>
-        <button type="button" class="btn btn-primary"><%= t("Sign Up") %></button>
+        <% if not user_signed_in? %>
+          <a href="<%= new_user_session_path %>" class="btn btn-outline-primary me-2"><%= t('Login') %></a>
+          <a href="<%= new_user_registration_path %>" class="btn btn-outline-primary me-2"><%= t("Sign Up") %></a>
+        <% else %>
+          <%= button_to t('Sign Out'), user, method: :delete, class: "btn btn-outline-primary me-2" %>
+        <% end %>
       </div>
     </header>
   </div>
