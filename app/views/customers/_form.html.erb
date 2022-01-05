@@ -13,55 +13,60 @@
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, class: 'form-control' %>
   </div>
 
   <div class="field">
+    <%= form.label :whatsapp %>
+    <%= form.text_field :whatsapp, class: 'form-control' %>
+  </div>  
+
+  <div class="field">
     <%= form.label :doctype %>
-    <%= form.number_field :doctype %>
+    <%= form.number_field :doctype, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label :docnumber %>
-    <%= form.text_field :docnumber %>
+    <%= form.text_field :docnumber, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label :zipcode %>
-    <%= form.text_field :zipcode %>
+    <%= form.text_field :zipcode, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label :address %>
-    <%= form.text_field :address %>
+    <%= form.text_field :address, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label :address_number %>
-    <%= form.text_field :address_number %>
+    <%= form.text_field :address_number, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label :complement %>
-    <%= form.text_field :complement %>
+    <%= form.text_field :complement, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label :neighborhood %>
-    <%= form.text_field :neighborhood %>
+    <%= form.text_field :neighborhood, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label :city %>
-    <%= form.text_field :city %>
+    <%= form.text_field :city, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label :address_state %>
-    <%= form.text_field :address_state %>
+    <%= form.text_field :address_state, class: 'form-control' %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Salvar", class: "btn btn-primkary" %>
   </div>
 <% end %>

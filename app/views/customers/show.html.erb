@@ -6,6 +6,11 @@
 </p>
 
 <p>
+  <strong>Whatsapp:</strong>
+  <%= @customer.whatsapp %>
+</p>
+
+<p>
   <strong>Doctype:</strong>
   <%= @customer.doctype %>
 </p>
@@ -50,5 +55,5 @@
   <%= @customer.address_state %>
 </p>
 
-<%= link_to 'Edit', edit_customer_path(@customer) %> |
-<%= link_to 'Back', customers_path %>
+<%= link_to t('Edit'), edit_customer_path(@customer), class: "btn btn-primary" %> |
+<%= link_to t('Back'), customers_path, class: "btn btn-default" %>

@@ -228,3 +228,38 @@ pt-BR:
   Sign Up: Cadastrar
   Log In: Entrar
   Forgot your password?: Esqueceu a sua senha?
+  Customers: Clientes
+  Name: Nome
+  Whatsapp: Whatsapp  
+  Doctype: Tipo Doc
+  Docnumber: Documento
+  Address: Endereço
+  Zipcode: Cep
+  Address number: Número
+  Complement: Complemento
+  Neighborhood: Bairro
+  City: Cidade
+  Address state: Estado
+  New Customer: Novo CLiente
+  Edit: Alterar
+  Back: Voltar
+  Editing Customer: Alterar Cliente
+  New Customer: Novo Cliente
+  Show: Mostrar
+  activerecord:
+    attributes:
+      name: Nome
+      doctype: Tipo Doc
+      docnumber: Documento
+      zipcode: Cep
+      address: Endereço
+      address_number: Número
+      complement: Complemento
+      neighborhood: Bairro
+      city: Cidade
+      address_state: Estado
+      whatsapp: Whatsapp
+    models:
+      customer:
+        one: Cliente
+        other: Clientes
