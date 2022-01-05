@@ -246,19 +246,26 @@ pt-BR:
   Editing Customer: Alterar Cliente
   New Customer: Novo Cliente
   Show: Mostrar
+  Are you sure?: Tem certeza?
+  actions:
+    show: Mostrar
+    edit: Alterar
+    new: Novo
+    back: Voltar
   activerecord:
     attributes:
-      name: Nome
-      doctype: Tipo Doc
-      docnumber: Documento
-      zipcode: Cep
-      address: Endereço
-      address_number: Número
-      complement: Complemento
-      neighborhood: Bairro
-      city: Cidade
-      address_state: Estado
-      whatsapp: Whatsapp
+      customer:
+        name: Nome
+        doctype: Tipo Doc
+        docnumber: Documento
+        zipcode: Cep
+        address: Endereço
+        address_number: Número
+        complement: Complemento
+        neighborhood: Bairro
+        city: Cidade
+        address_state: Estado
+        whatsapp: Whatsapp
     models:
       customer:
         one: Cliente
