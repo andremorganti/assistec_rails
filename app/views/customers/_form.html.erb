@@ -67,14 +67,14 @@
     <%= form.text_field :city, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  
     <%= form.label :address_state %>
     <div class="form-select">
       <%= form.select :address_state, options_for_select(
               Customer.address_states.map {|key, value| [key.titleize, Customer.address_states.key(value)]}, customer.address_state
       ) %>
     </div>
-  </div>
+  
 
   <div class="actions">
     <%= form.submit "Salvar", class: "btn btn-primary" %>
