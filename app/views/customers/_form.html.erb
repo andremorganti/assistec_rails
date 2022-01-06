@@ -25,7 +25,11 @@
 
   <div class="field">
     <%= form.label :doctype %>
-    <%= form.number_field :doctype, class: 'form-control' %>
+    <div class="form-control">
+      <%= form.select :doctype, options_for_select(
+              Customer.doctypes.map {|key, value| [key.titleize, Customer.doctypes.key(value)]}, customer.doctype
+      ) %>
+    </div>
   </div>
 
   <div class="field">
@@ -65,7 +69,11 @@
 
   <div class="field">
     <%= form.label :address_state %>
-    <%= form.text_field :address_state, class: 'form-control' %>
+    <div class="form-select">
+      <%= form.select :address_state, options_for_select(
+              Customer.address_states.map {|key, value| [key.titleize, Customer.address_states.key(value)]}, customer.address_state
+      ) %>
+    </div>
   </div>
 
   <div class="actions">
