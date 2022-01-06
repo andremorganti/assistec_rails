@@ -16,7 +16,7 @@
           <a href="<%= new_user_session_path %>" class="btn btn-outline-primary me-2"><%= t('Login') %></a>
           <a href="<%= new_user_registration_path %>" class="btn btn-outline-primary me-2"><%= t("Sign Up") %></a>
         <% else %>
-          <%= button_to t('Sign Out'), user_registration_path, method: :delete, class: "btn btn-outline-danger me-2" %>
+          <%= button_to t('Sign Out'), destroy_user_session_path, method: :delete, class: "btn btn-outline-danger me-2" %>
         <% end %>
       </div>
     </header>
