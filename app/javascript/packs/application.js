@@ -14,6 +14,7 @@ import "bootstrap"
 
 // Import the specific modules you may need (Modal, Alert, etc)
 import { Tooltip, Popover } from "bootstrap"
+import { Cleave } from "cleave.js"
 
 // The stylesheet location we created earlier
 require("../stylesheets/application.scss")

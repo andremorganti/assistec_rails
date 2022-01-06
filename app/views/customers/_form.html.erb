@@ -1,3 +1,5 @@
+<%= javascript_pack_tag 'customer.js' %>
+
 <%= form_with(model: customer, local: true) do |form| %>
   <% if customer.errors.any? %>
     <div id="error_explanation">
@@ -18,7 +20,7 @@
 
   <div class="field">
     <%= form.label :whatsapp %>
-    <%= form.text_field :whatsapp, class: 'form-control' %>
+    <%= form.text_field :whatsapp, class: 'form-control input-phone' %>
   </div>  
 
   <div class="field">
@@ -33,7 +35,7 @@
 
   <div class="field">
     <%= form.label :zipcode %>
-    <%= form.text_field :zipcode, class: 'form-control' %>
+    <%= form.text_field :zipcode, class: 'form-control zipcode' %>
   </div>
 
   <div class="field">
