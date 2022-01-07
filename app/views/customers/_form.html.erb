@@ -68,12 +68,16 @@
   </div>
 
   
-    <%= form.label :address_state %>
+    <!--<%= form.label :address_state %>-->
     <div class="form-select">
       <%= form.select :address_state, options_for_select(
-              Customer.address_states.map {|key, value| [key.titleize, Customer.address_states.key(value)]}, customer.address_state
-      ) %>
-    </div>
+                Customer.address_states.map {|key, value| [key.titleize, Customer.address_states.key(value)]},
+                customer.address_state
+              ),
+              {},
+              {class: "form-select"}
+      %>
+    <!--</div>-->
   
 
   <div class="actions">
