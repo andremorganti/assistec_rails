@@ -2,7 +2,7 @@ class Customer < ApplicationRecord
     enum doctype: {
         cpf: 0,
         cnpj: 1,
-        rj: 2
+        rg: 2
       }
 
     enum address_state: {

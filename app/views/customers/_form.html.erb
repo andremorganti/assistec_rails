@@ -23,14 +23,17 @@
     <%= form.text_field :whatsapp, class: 'form-control input-phone' %>
   </div>  
 
-  <div class="field">
-    <%= form.label :doctype %>
+
+    <!--<%= form.label :doctype %>-->
     <div class="form-control">
       <%= form.select :doctype, options_for_select(
-              Customer.doctypes.map {|key, value| [key.titleize, Customer.doctypes.key(value)]}, customer.doctype
-      ) %>
+              Customer.doctypes.map {|key, value| [key.titleize, Customer.doctypes.key(value)]},
+              customer.doctype
+            ),
+            {},
+            {class: "form-select"}
+      %>
     </div>
-  </div>
 
   <div class="field">
     <%= form.label :docnumber %>
@@ -77,8 +80,7 @@
               {},
               {class: "form-select"}
       %>
-    <!--</div>-->
-  
+    </div>  
 
   <div class="actions">
     <%= form.submit "Salvar", class: "btn btn-primary" %>
