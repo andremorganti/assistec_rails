@@ -266,6 +266,7 @@ pt-BR:
         city: Cidade
         address_state: Estado
         whatsapp: Whatsapp
+        birthdate: Data de Nascimento
     models:
       customer:
         one: Cliente

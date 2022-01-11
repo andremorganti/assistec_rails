@@ -26,6 +26,11 @@
 </p>
 
 <p>
+  <strong><%= Customer.human_attribute_name("birthdate") %>:</strong>
+  <%= @customer.birthdate.strftime("%d/%m%Y") %>
+</p>
+
+<p>
   <strong>Address:</strong>
   <%= @customer.address %>
 </p>
